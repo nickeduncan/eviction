@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root 'page#index'
+  resources :eviction_cases
+  root 'eviction_cases#index'
 
   get '/secret' => 'page#secret'
 

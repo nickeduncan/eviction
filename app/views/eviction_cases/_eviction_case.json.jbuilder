@@ -1,0 +1,2 @@
+json.extract! eviction_case, :id, :property_id, :unit, :tenant_id, :name, :status, :balance_0_30_in_cents, :balance_31_60_in_cents, :balance_61_90_in_cents, :balance_over_90_in_cents, :total_owed_in_cents, :housing_authority_in_cents, :general_notes, :court_registry_in_cents, :file_date, :summons_served, :case_number, :default_date, :judgement, :writ_of_possession, :motion_to_strike, :stipulations, :twenty_four_hour_notice, :created_at, :updated_at
+json.url eviction_case_url(eviction_case, format: :json)

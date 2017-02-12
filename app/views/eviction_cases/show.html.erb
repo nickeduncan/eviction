@@ -1,0 +1,114 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Property:</strong>
+  <%= @eviction_case.property_id %>
+</p>
+
+<p>
+  <strong>Unit:</strong>
+  <%= @eviction_case.unit %>
+</p>
+
+<p>
+  <strong>Tenant:</strong>
+  <%= @eviction_case.tenant_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @eviction_case.name %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @eviction_case.status %>
+</p>
+
+<p>
+  <strong>Balance 0 30 in cents:</strong>
+  <%= @eviction_case.balance_0_30_in_cents %>
+</p>
+
+<p>
+  <strong>Balance 31 60 in cents:</strong>
+  <%= @eviction_case.balance_31_60_in_cents %>
+</p>
+
+<p>
+  <strong>Balance 61 90 in cents:</strong>
+  <%= @eviction_case.balance_61_90_in_cents %>
+</p>
+
+<p>
+  <strong>Balance over 90 in cents:</strong>
+  <%= @eviction_case.balance_over_90_in_cents %>
+</p>
+
+<p>
+  <strong>Total owed in cents:</strong>
+  <%= @eviction_case.total_owed_in_cents %>
+</p>
+
+<p>
+  <strong>Housing authority in cents:</strong>
+  <%= @eviction_case.housing_authority_in_cents %>
+</p>
+
+<p>
+  <strong>General notes:</strong>
+  <%= @eviction_case.general_notes %>
+</p>
+
+<p>
+  <strong>Court registry in cents:</strong>
+  <%= @eviction_case.court_registry_in_cents %>
+</p>
+
+<p>
+  <strong>File date:</strong>
+  <%= @eviction_case.file_date %>
+</p>
+
+<p>
+  <strong>Summons served:</strong>
+  <%= @eviction_case.summons_served %>
+</p>
+
+<p>
+  <strong>Case number:</strong>
+  <%= @eviction_case.case_number %>
+</p>
+
+<p>
+  <strong>Default date:</strong>
+  <%= @eviction_case.default_date %>
+</p>
+
+<p>
+  <strong>Judgement:</strong>
+  <%= @eviction_case.judgement %>
+</p>
+
+<p>
+  <strong>Writ of possession:</strong>
+  <%= @eviction_case.writ_of_possession %>
+</p>
+
+<p>
+  <strong>Motion to strike:</strong>
+  <%= @eviction_case.motion_to_strike %>
+</p>
+
+<p>
+  <strong>Stipulations:</strong>
+  <%= @eviction_case.stipulations %>
+</p>
+
+<p>
+  <strong>Twenty four hour notice:</strong>
+  <%= @eviction_case.twenty_four_hour_notice %>
+</p>
+
+<%= link_to 'Edit', edit_eviction_case_path(@eviction_case) %> |
+<%= link_to 'Back', eviction_cases_path %>

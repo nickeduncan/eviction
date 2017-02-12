@@ -1,0 +1,1 @@
+json.partial! "eviction_cases/eviction_case", eviction_case: @eviction_case

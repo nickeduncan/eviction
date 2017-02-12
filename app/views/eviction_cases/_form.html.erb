@@ -1,0 +1,127 @@
+<%= form_for(eviction_case) do |f| %>
+  <% if eviction_case.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(eviction_case.errors.count, "error") %> prohibited this eviction_case from being saved:</h2>
+
+      <ul>
+      <% eviction_case.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :property_id %>
+    <%= f.text_field :property_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :unit %>
+    <%= f.text_field :unit %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tenant_id %>
+    <%= f.text_field :tenant_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :status %>
+    <%= f.text_field :status %>
+  </div>
+
+  <div class="field">
+    <%= f.label :balance_0_30_in_cents %>
+    <%= f.number_field :balance_0_30_in_cents %>
+  </div>
+
+  <div class="field">
+    <%= f.label :balance_31_60_in_cents %>
+    <%= f.number_field :balance_31_60_in_cents %>
+  </div>
+
+  <div class="field">
+    <%= f.label :balance_61_90_in_cents %>
+    <%= f.number_field :balance_61_90_in_cents %>
+  </div>
+
+  <div class="field">
+    <%= f.label :balance_over_90_in_cents %>
+    <%= f.number_field :balance_over_90_in_cents %>
+  </div>
+
+  <div class="field">
+    <%= f.label :total_owed_in_cents %>
+    <%= f.number_field :total_owed_in_cents %>
+  </div>
+
+  <div class="field">
+    <%= f.label :housing_authority_in_cents %>
+    <%= f.number_field :housing_authority_in_cents %>
+  </div>
+
+  <div class="field">
+    <%= f.label :general_notes %>
+    <%= f.text_area :general_notes %>
+  </div>
+
+  <div class="field">
+    <%= f.label :court_registry_in_cents %>
+    <%= f.number_field :court_registry_in_cents %>
+  </div>
+
+  <div class="field">
+    <%= f.label :file_date %>
+    <%= f.datetime_select :file_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :summons_served %>
+    <%= f.datetime_select :summons_served %>
+  </div>
+
+  <div class="field">
+    <%= f.label :case_number %>
+    <%= f.text_field :case_number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :default_date %>
+    <%= f.datetime_select :default_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :judgement %>
+    <%= f.datetime_select :judgement %>
+  </div>
+
+  <div class="field">
+    <%= f.label :writ_of_possession %>
+    <%= f.datetime_select :writ_of_possession %>
+  </div>
+
+  <div class="field">
+    <%= f.label :motion_to_strike %>
+    <%= f.datetime_select :motion_to_strike %>
+  </div>
+
+  <div class="field">
+    <%= f.label :stipulations %>
+    <%= f.text_field :stipulations %>
+  </div>
+
+  <div class="field">
+    <%= f.label :twenty_four_hour_notice %>
+    <%= f.datetime_select :twenty_four_hour_notice %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
