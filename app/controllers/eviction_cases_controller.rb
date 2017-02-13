@@ -1,5 +1,5 @@
 class EvictionCasesController < ApplicationController
-  before_action :set_eviction_case, only: [:show, :edit, :update, :destroy, :download]
+  before_action :set_eviction_case, only: [:show, :edit, :update, :destroy, :complaint, :default, :strike, :dismiss]
 
   # GET /eviction_cases
   # GET /eviction_cases.json
@@ -23,17 +23,46 @@ class EvictionCasesController < ApplicationController
   end
 
   # GET /evication_cases/1/download
-  def download
+  def complaint
     file = Tempfile.new('test')
     doc_text = Complaint.text(@eviction_case)
     Prawn::Document.generate(file) do
       text doc_text
     end
     # send_file 'app/assets/test.pdf', :type=>"application/pdf", :x_sendfile=>true
-    p file
+
     send_file file, :type=>"application/pdf", :x_sendfile=>true
   end
+  def default
+    file = Tempfile.new('test')
+    doc_text = Default.text(@eviction_case)
+    Prawn::Document.generate(file) do
+      text doc_text
+    end
+    # send_file 'app/assets/test.pdf', :type=>"application/pdf", :x_sendfile=>true
 
+    send_file file, :type=>"application/pdf", :x_sendfile=>true
+  end
+  def strike
+    file = Tempfile.new('test')
+    doc_text = Strike.text(@eviction_case)
+    Prawn::Document.generate(file) do
+      text doc_text
+    end
+
+
+    send_file file, :type=>"application/pdf", :x_sendfile=>true
+  end
+  def dismiss
+    file = Tempfile.new('test')
+    doc_text = Dismiss.text(@eviction_case)
+    Prawn::Document.generate(file) do
+      text doc_text
+    end
+
+
+    send_file file, :type=>"application/pdf", :x_sendfile=>true
+  end
   # POST /eviction_cases
   # POST /eviction_cases.json
   def create

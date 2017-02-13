@@ -51,6 +51,87 @@ class Complaint
                 CASE NO.   #{eviction_case.name}
 
 
-    "
+                xxxxxx
+            d/b/a xxxxxx
+            Plaintiff,
+            vs.
+            xxxxxxxx
+
+            and all others in possession
+            Defendant/
+
+            NONMILITARY AFFIDAVIT
+
+            STATE OF FLORIDA    )
+            )
+            COUNTY OF MIAMI DADE  )
+
+            BEFORE ME the undersigned authority personally appeared before me, Briana Miranda and duly sworn deposed on oath says:
+
+            Affiant is the duly authorized agent of Plaintiff in this cause and has personal knowledge of all facts asserted in this statement.
+
+            Defendant, xxxxxxxxx known by Affiant not to be in the military service of the United States or any governmental agency or branch subject to the provisions of the Soldiers and Sailors Civil Relief Act.
+
+            FURTHER AFFIANT SAYETH NAUGHT
+
+            _______________________________________
+            Affiant Signature
+
+            Affiant Name: xxxxx
+            Address: 8730 NW 36th Avenue Miami, FL  33147
+            Telephone No. xxxxxx
+
+            The foregoing instrument was sworn to and acknowledged before me personally on February 13, 2017 by Briana Miranda  who  is personally known to me
+
+            NX____________________________________
+            NOTARY PUBLIC-STATE OF FLORIDA
+
+            Name: xxxxx
+            Commission No.:xxxxx
+            My Commission Expires xxxxxx
+
+
+
+
+
+
+
+            IN THE COUNTY COURT IN AND FOR MIAMI DADE COUNTY, FLORIDA
+
+                                  CIVIL DIVISION
+                        CASE NO:  xxxxxx
+                        JUDGE:
+
+            xxxxxx
+            d/b/a xxxxxx
+
+            vs.
+
+            xxxxxx
+
+            and all others in possession
+
+            AFFIDAVIT DESIGNATING AUTHORITY TO PROPERTY MANAGERS
+
+
+            BEFORE ME, the undersigned authority personally appeared xxxxxx, Manager and Registered Agent on record for xxxxxx d/b/a xxxxxxxx who after being duly sworn deposes and says,
+
+            That she has given and granted xxxxxx  and xxxxxx authority to act as Authorized Property Managers on the behalf of xxxxxx d/b/a xxxxxxx to execute three day notices and seven day
+            notices to terminate, to sign and file pleadings for evictions, i.e., complaints for eviction.  Also, to sign and file motions for default, to obtain final judgments, writs of possession
+            for residential evictions in uncontested cases for xxxxx  d/b/a xxxxxx.
+
+            In addition, authority is hereby granted to said authorized property managers to attend Landlord/Tenant Mediations and/or Final Hearings and make decisions on behalf of
+            xxxxxxxx d/b/a xxxxxxx.
+
+
+
+            The foregoing instrument was acknowledged before me on xxxxxxx , by xxxxxx, who is personally known to me.
+
+
+                      NX________________________________________
+                       Notary Public
+                                                                                                      Name: xxxxxx
+                             Commission No.: xxxxxx
+                                       My Commission Expires: xxxxx "
   end
 end

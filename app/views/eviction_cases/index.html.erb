@@ -71,7 +71,10 @@
         <td><%= eviction_case.motion_to_strike %></td>
         <td><%= eviction_case.stipulations %></td>
         <td><%= eviction_case.twenty_four_hour_notice %></td> -->
-        <td><%= link_to 'Download', [:download, eviction_case] %></td>
+        <td><%= link_to 'Complaint', [:complaint, eviction_case] %></td>
+        <td><%= link_to 'Default', [:default, eviction_case] %></td>
+        <td><%= link_to 'Strike', [:strike, eviction_case] %></td>
+        <td><%= link_to 'Dismiss', [:dismiss, eviction_case] %></td>
         <td><%= link_to 'Show', eviction_case %></td>
         <td><%= link_to 'Edit', edit_eviction_case_path(eviction_case) %></td>
         <td><%= link_to 'Delete', eviction_case, method: :delete, data: { confirm: 'Are you sure?' } %></td>
