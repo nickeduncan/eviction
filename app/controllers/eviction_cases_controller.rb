@@ -1,10 +1,6 @@
 class EvictionCasesController < ApplicationController
-<<<<<<< HEAD
-  before_action :set_eviction_case, only: [:show, :edit, :update, :destroy, :download]
-  helper_method :sort_column, :sort_direction
-=======
   before_action :set_eviction_case, only: [:show, :edit, :update, :destroy, :complaint, :default, :strike, :dismiss]
->>>>>>> d832e36666fc8615d0fb81174b97ee277ad17bfb
+  helper_method :sort_column, :sort_direction
 
   # GET /eviction_cases
   # GET /eviction_cases.json
@@ -110,7 +106,7 @@ class EvictionCasesController < ApplicationController
 
   private
     def sortable_columns
-      ["name", "price"]
+      ["name", "unit", "tenant_id", "property_id", "status", "total_owed_in_cents"]
     end
 
     def sort_column

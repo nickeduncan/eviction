@@ -20,16 +20,16 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Property</th>
-      <th>Unit</th>
-      <th>Tenant</th>
-      <th>Name</th>
-      <th>Status</th>
+      <th><%= sort_link "property_id", "Property" %></th>
+      <th><%= sort_link "unit" %></th>
+      <th><%= sort_link "tenant_id", "Tenant" %></th>
+      <th><%= sort_link "name" %></th>
+      <th><%= sort_link "status" %></th>
       <!-- <th>0-30 Day Balance</th>
       <th>31-60 Day Balance</th>
       <th>61-90 Day Balance</th>
       <th>Over 90 Day Balance</th> -->
-      <th>Total Owed</th>
+      <th><%= sort_link "total_owed_in_cents", "Total Owed" %></th>
       <!-- <th>Housing Authority</th>
       <th>General Notes</th>
       <th>Court Registry</th>
