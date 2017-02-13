@@ -1,10 +1,11 @@
 class EvictionCasesController < ApplicationController
   before_action :set_eviction_case, only: [:show, :edit, :update, :destroy, :download]
+  helper_method :sort_column, :sort_direction
 
   # GET /eviction_cases
   # GET /eviction_cases.json
   def index
-    @eviction_cases = EvictionCase.all
+    @eviction_cases = EvictionCase.order("#{sort_column} #{sort_direction}")
     redirect_to register_path if session[:user_id].nil?
   end
 
@@ -75,6 +76,17 @@ class EvictionCasesController < ApplicationController
   end
 
   private
+    def sortable_columns
+      ["name", "price"]
+    end
+
+    def sort_column
+      sortable_columns.include?(params[:column]) ? params[:column] : "name"
+    end
+
+    def sort_direction
+      %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
+    end
     # Use callbacks to share common setup or constraints between actions.
     def set_eviction_case
       @eviction_case = EvictionCase.find(params[:id])
