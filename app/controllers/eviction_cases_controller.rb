@@ -106,7 +106,7 @@ class EvictionCasesController < ApplicationController
 
   private
     def sortable_columns
-      ["name", "unit", "tenant_id", "property_id", "status", "total_owed_in_cents"]
+      ["name", "unit", "tenant_id", "property_id", "status", "total_owed_in_cents", "file_date"]
     end
 
     def sort_column
