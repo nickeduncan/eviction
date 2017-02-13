@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  resources :eviction_cases
   root 'eviction_cases#index'
+  get 'site/search'
+  post 'site/search'
+
+  resources :eviction_cases
+  # root 'eviction_cases#index'
 
   get '/secret' => 'page#secret'
 
