@@ -1,7 +1,8 @@
 class SiteController < ApplicationController
   def search
-    tenant_ids = EvictionCase.where("tenant_id like ?", "%#{params[:term]}%")
-    names = EvictionCase.where("name LIKE ?", "%#{params[:term]}%")
-    @results = names + tenant_ids
+    @results = []
+    [:property_id, :tenant_id, :name, :status].each do |item|
+      @results += EvictionCase.where("#{item} LIKE ?", "%#{params[:term]}%")
+    end
   end
 end
