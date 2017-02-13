@@ -3,10 +3,13 @@
   <%= search_field_tag :term %>
   <%= submit_tag "Search" %>
 <% end %>
-<%= params[:term] %>
+<!-- <%= params[:term] %> -->
 <h2>Search Results</h2>
-<% if @result %>
-  <%= @result.name %>
-<% else %>
+
+<% if @results.empty? %>
   Try your search again.
+<% else %>
+  <% @results.each do |result| %>
+    <p><%= link_to result.name, result %></p>
+  <% end %>
 <% end %>

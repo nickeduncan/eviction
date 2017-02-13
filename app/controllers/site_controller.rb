@@ -1,5 +1,5 @@
 class SiteController < ApplicationController
   def search
-    @result = EvictionCase.find_by name: params[:term]
+    @results = EvictionCase.where("name LIKE ?", "#{params[:term]}%")
   end
 end
