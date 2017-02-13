@@ -1,5 +1,5 @@
 class EvictionCasesController < ApplicationController
-  before_action :set_eviction_case, only: [:show, :edit, :update, :destroy]
+  before_action :set_eviction_case, only: [:show, :edit, :update, :destroy, :download]
 
   # GET /eviction_cases
   # GET /eviction_cases.json
@@ -20,6 +20,18 @@ class EvictionCasesController < ApplicationController
 
   # GET /eviction_cases/1/edit
   def edit
+  end
+
+  # GET /evication_cases/1/download
+  def download
+    file = Tempfile.new('test')
+    doc_text = Complaint.text(@eviction_case)
+    Prawn::Document.generate(file) do
+      text doc_text
+    end
+    # send_file 'app/assets/test.pdf', :type=>"application/pdf", :x_sendfile=>true
+    p file
+    send_file file, :type=>"application/pdf", :x_sendfile=>true
   end
 
   # POST /eviction_cases

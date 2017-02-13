@@ -3,7 +3,13 @@ Rails.application.routes.draw do
   get 'site/search'
   post 'site/search'
 
-  resources :eviction_cases
+  # post 'eviction_cases/:id' => 'eviction_cases#download'
+
+  resources :eviction_cases do
+    member do
+      get 'download'
+    end
+  end
   # root 'eviction_cases#index'
 
   get '/secret' => 'page#secret'
