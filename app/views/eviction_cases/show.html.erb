@@ -27,32 +27,32 @@
 
 <p>
   <strong>0-30 Day Balance:</strong>
-  <%= @eviction_case.balance_0_30_in_cents %>
+  $<%= @eviction_case.formatted_balance(@eviction_case.balance_0_30_in_cents) %>
 </p>
 
 <p>
   <strong>31-60 Day Balance:</strong>
-  <%= @eviction_case.balance_31_60_in_cents %>
+  $<%= @eviction_case.formatted_balance(@eviction_case.balance_31_60_in_cents) %>
 </p>
 
 <p>
   <strong>61-90 Day Balance:</strong>
-  <%= @eviction_case.balance_61_90_in_cents %>
+  $<%= @eviction_case.formatted_balance(@eviction_case.balance_61_90_in_cents) %>
 </p>
 
 <p>
   <strong>Balance over 90 Balance:</strong>
-  <%= @eviction_case.balance_over_90_in_cents %>
+  $<%= @eviction_case.formatted_balance(@eviction_case.balance_over_90_in_cents) %>
 </p>
 
 <p>
   <strong>Total Balance Owed:</strong>
-  <%= @eviction_case.total_owed_in_cents %>
+  $<%= @eviction_case.formatted_balance(@eviction_case.total_owed_in_cents) %>
 </p>
 
 <p>
   <strong>Housing authority Balance:</strong>
-  <%= @eviction_case.housing_authority_in_cents %>
+  $<%= @eviction_case.formatted_balance(@eviction_case.housing_authority_in_cents) %>
 </p>
 
 <p>
@@ -62,7 +62,7 @@
 
 <p>
   <strong>Court registry Balance:</strong>
-  <%= @eviction_case.court_registry_in_cents %>
+  $<%= @eviction_case.formatted_balance(@eviction_case.court_registry_in_cents) %>
 </p>
 
 <p>
