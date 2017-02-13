@@ -7,7 +7,10 @@ Rails.application.routes.draw do
 
   resources :eviction_cases do
     member do
-      get 'download'
+      get 'complaint'
+      get 'default'
+      get 'strike'
+      get 'dismiss'
     end
   end
   # root 'eviction_cases#index'
