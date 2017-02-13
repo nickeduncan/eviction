@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170212200358) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "eviction_cases", force: :cascade do |t|
     t.string   "property_id"
     t.string   "unit"
