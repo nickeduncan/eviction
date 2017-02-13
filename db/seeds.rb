@@ -5,3 +5,36 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'csv'
+
+csv_text = File.read(Rails.root.join('lib', 'seeds', 'eviction_cases.csv'))
+csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
+
+csv.each do |row|
+  t = EvictionCase.new
+  t.property_id = row['property_id']
+  t.unit = row['unit']
+  t.tenant_id = row['tenant_id']
+  t.name = row['name']
+  t.status = row['status']
+  t.balance_0_30_in_cents = row['balance_0_30_in_cents']
+  t.balance_31_60_in_cents = row['balance_31_60_in_cents']
+  t.balance_61_90_in_cents = row['balance_61_90_in_cents']
+  t.balance_over_90_in_cents = row['balance_over_90_in_cents']
+  t.total_owed_in_cents = row['total_owed_in_cents']
+  t.housing_authority_in_cents = row['housing_authority_in_cents']
+  t.general_notes = row['general_notes']
+  t.court_registry_in_cents = row['court_registry_in_cents']
+  t.file_date = row['file_date']
+  t.summons_served = row['summons_served']
+  t.case_number = row['case_number']
+  t.default_date = row['default_date']
+  t.judgement = row['judgement']
+  t.writ_of_possession = row['writ_of_possession']
+  t.motion_to_strike = row['motion_to_strike']
+  t.stipulations = row['stipulations']
+  t.twenty_four_hour_notice = row['twenty_four_hour_notice']
+
+  t.save
+
+end
