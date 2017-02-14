@@ -12,6 +12,7 @@ csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
 
 csv.each do |row|
   t = EvictionCase.new
+  t.lol = row['lol']
   t.property_id = row['property_id']
   t.unit = row['unit']
   t.tenant_id = row['tenant_id']
