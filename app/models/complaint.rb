@@ -37,9 +37,10 @@ class Complaint
     I HEREBY CERTIFY THAT A TRUE AND CORRECT COPY OF THE FOREGOING COMPLAINT WAS SERVED UPON THE DEFENDANT (S).
 
     The foregoing instrument was acknowledged             ____________________________________________
-    before me this February 13, 2017  by #{eviction_case.prop_asst}.       #{eviction_case.prop_asst}- Authorized Property Manager who is personally known to me.                                             8730 NW 36th Avenue
-                                                                                                                   Miami, FL  33147
-                                                                                                                  (305) 558-0060
+    before me this #{Time.now}  by #{eviction_case.prop_asst}.       #{eviction_case.prop_asst}- Authorized Property Manager who is personally known to me.
+                                                                        ________________-
+                                                                        ________________
+                                                                        _____________
 
     NX_____________________________________
     Notary
@@ -81,7 +82,7 @@ class Complaint
             Affiant Signature
 
             Affiant Name: #{eviction_case.prop_asst}
-            Address: #{eviction_case.address}#{eviction_case.city_state_zip}
+            Address: ___________________________
             Telephone No. _______
 
             The foregoing instrument was sworn to and acknowledged before me personally on #{Time.now}by Briana Miranda  who  is personally known to me
@@ -118,10 +119,13 @@ class Complaint
             AFFIDAVIT DESIGNATING AUTHORITY TO PROPERTY MANAGERS
 
 
-            BEFORE ME, the undersigned authority personally appeared #{eviction_case.prop_asst}, Manager and Registered Agent on record for #{eviction_case.legal_name} d/b/a #{eviction_case.dba} who after being duly sworn deposes and says,
+            BEFORE ME, the undersigned authority personally appeared #{eviction_case.prop_asst}, Manager and Registered Agent on record for #{eviction_case.legal_name}
+            d/b/a #{eviction_case.dba} who after being duly sworn deposes and says,
 
-            That she has given and granted #{eviction_case.three_day_sign}  and #{eviction_case.prop_asst} authority to act as Authorized Property Managers on the behalf of #{eviction_case.legal_name} d/b/a #{eviction_case.dba} to execute three day notices and seven day
-            notices to terminate, to sign and file pleadings for evictions, i.e., complaints for eviction.  Also, to sign and file motions for default, to obtain final judgments, writs of possession
+            That she has given and granted #{eviction_case.three_day_sign}  and #{eviction_case.prop_asst} authority to act as Authorized Property Managers on the behalf of
+            #{eviction_case.legal_name} d/b/a #{eviction_case.dba} to execute three day notices and seven day
+            notices to terminate, to sign and file pleadings for evictions, i.e., complaints for eviction.  Also, to sign and file motions for default, to obtain final judgments,
+            writs of possession
             for residential evictions in uncontested cases for #{eviction_case.legal_name} d/b/a #{eviction_case.dba}.
 
             In addition, authority is hereby granted to said authorized property managers to attend Landlord/Tenant Mediations and/or Final Hearings and make decisions on behalf of

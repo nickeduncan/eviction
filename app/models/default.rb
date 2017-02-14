@@ -20,11 +20,12 @@ PLAINTIFF’S / AUTHORIZED PROPERTY MANAGER FOR PLAINTIFF’S AFFIDAVIT/ NON MIL
 
 BEFORE ME, the undersigned authority, personally appeared, #{eviction_case.legal_name}, Authorized Property Manager for Plaintiff, who after being duly sworn, deposes and says:
 
-1. That she is the authorized property manager for plaintiff/landlord herein.  That no moneys have been accepted from or on behalf of the defendant(s) herein since the delivery, mailing or posting of the three day notice.
+1. That she is the authorized property manager for plaintiff/landlord herein.  That no moneys have been accepted from or on behalf of the defendant(s) herein since the delivery,
+ mailing or posting of the three day notice.
 
 2. That Plaintiff has personal knowledge that the defendant(s) above named, (is) (are) not in the Military Service of the United States or any of its allies.
 
-      3. That the statements contained in the complaint for removal of tenant are correct and true.
+3. That the statements contained in the complaint for removal of tenant are correct and true.
 
 
 
@@ -122,7 +123,9 @@ BEFORE ME, the undersigned authority, personally appeared #{eviction_case.prop_a
 
 1.	Affiant is agent for Plaintiff in the instant case.
 
-2.	Costs to date in this action are as follows:  Filing fees were One Hundred Eighty Five Dollars ($185.00), issuance of Court Summons was Ten Dollars ($10), service of process fees were Twenty Five Dollars ($25.00, Sheriff fees (filed with Default Package) are One Hundred Fifteen Dollars ($115.00), for a total costs of $335.00.
+2.	Costs to date in this action are as follows:  Filing fees were One Hundred Eighty Five Dollars ($185.00), issuance of Court
+Summons was Ten Dollars ($10), service of process fees were Twenty Five Dollars ($25.00, Sheriff fees (filed with Default Package) are One Hundred Fifteen
+Dollars ($115.00), for a total costs of $335.00.
 
 
 
