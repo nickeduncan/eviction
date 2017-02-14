@@ -76,7 +76,7 @@ I do hereby certify that no copy of answer or other pleading of the Defendant(s)
 
 
 
-#{eviction_case.prop_asst}-Authorized Property Manager for Plaintiff___________ Date #{Time.now)}
+#{eviction_case.prop_asst}-Authorized Property Manager for Plaintiff___________ Date #{Time.now}
 _______________________-
 _________________________
 
