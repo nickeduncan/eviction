@@ -24,6 +24,10 @@ body {
 
 a:hover {
   text-decoration: none;
-  -webkit-tap-highlight-color: none;
+  color: #fff;
   background-color: inherit;
+}
+
+a:visited {
+  color: #000;
 }
