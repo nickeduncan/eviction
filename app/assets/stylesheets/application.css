@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  background-color: #f2f9fb;
+}
+
+.form-control {
+  max-width: 300px;
+}

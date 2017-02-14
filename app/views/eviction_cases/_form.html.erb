@@ -13,115 +13,115 @@
 
   <div class="field">
     <%= f.label :property_id %>
-    <%= f.text_field :property_id %>
+    <%= f.text_field :property_id, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :unit %>
-    <%= f.text_field :unit %>
+    <%= f.text_field :unit, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :tenant_id %>
-    <%= f.text_field :tenant_id %>
+    <%= f.text_field :tenant_id, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :status %>
-    <%= f.text_field :status %>
+    <%= f.text_field :status, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :balance_0_30_in_cents %>
-    <%= f.number_field :balance_0_30_in_cents %>
+    <%= f.number_field :balance_0_30_in_cents, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :balance_31_60_in_cents %>
-    <%= f.number_field :balance_31_60_in_cents %>
+    <%= f.number_field :balance_31_60_in_cents, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :balance_61_90_in_cents %>
-    <%= f.number_field :balance_61_90_in_cents %>
+    <%= f.number_field :balance_61_90_in_cents, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :balance_over_90_in_cents %>
-    <%= f.number_field :balance_over_90_in_cents %>
+    <%= f.number_field :balance_over_90_in_cents, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :total_owed_in_cents %>
-    <%= f.number_field :total_owed_in_cents %>
+    <%= f.number_field :total_owed_in_cents, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :housing_authority_in_cents %>
-    <%= f.number_field :housing_authority_in_cents %>
+    <%= f.number_field :housing_authority_in_cents, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :general_notes %>
-    <%= f.text_area :general_notes %>
+    <%= f.text_area :general_notes, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :court_registry_in_cents %>
-    <%= f.number_field :court_registry_in_cents %>
+    <%= f.number_field :court_registry_in_cents, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :file_date %>
-    <%= f.datetime_select :file_date %>
+    <%= f.datetime_select :file_date, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :summons_served %>
-    <%= f.datetime_select :summons_served %>
+    <%= f.datetime_select :summons_served, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :case_number %>
-    <%= f.text_field :case_number %>
+    <%= f.text_field :case_number, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :default_date %>
-    <%= f.datetime_select :default_date %>
+    <%= f.datetime_select :default_date, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :judgement %>
-    <%= f.datetime_select :judgement %>
+    <%= f.datetime_select :judgement, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :writ_of_possession %>
-    <%= f.datetime_select :writ_of_possession %>
+    <%= f.datetime_select :writ_of_possession, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :motion_to_strike %>
-    <%= f.datetime_select :motion_to_strike %>
+    <%= f.datetime_select :motion_to_strike, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :stipulations %>
-    <%= f.text_field :stipulations %>
+    <%= f.text_field :stipulations, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :twenty_four_hour_notice %>
-    <%= f.datetime_select :twenty_four_hour_notice %>
+    <%= f.datetime_select :twenty_four_hour_notice, class: "form-control" %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-primary" %>
   </div>
 <% end %>
