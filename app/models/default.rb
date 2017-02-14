@@ -3,14 +3,14 @@ class Default
     "__ IN THE CIRCUIT COURT OF THE ELEVENTH JUDICIAL CIRCUIT IN AND FOR MIAMI DADE COUNTY, FLORIDA
  X   IN THE COUNTY COURT IN AND FOR DADE COUNTY, FLORIDA
 									CIVIL DIVISION
-			LANDLORD AND TENANT                    	CASE NO.      COSO-16-011313                 AFFIDAVIT OF PROOF, NON-PAYMENT OF RENT AND
+			LANDLORD AND TENANT                    	CASE NO.      #{eviction_case.case_number}                AFFIDAVIT OF PROOF, NON-PAYMENT OF RENT AND
 ___ FAMILY		NON-MILITARY AFFIDAVIT, MOTION FOR DEFAULT
 ___ OTHER		AND DEFAULT
 
 
 PLAINTIFF(S)	VS		    	DEFENDANT(S)			CLOCK IN
-Beverly Hills Club Apartments, LLC	                Rose Carmel Vassor
-d/b/a Aventura Harbor Apartments                          and all others in possession
+#{eviction_case.legal_name}	                #{eviction_case.name}
+d/b/a #{eviction_case.dba}                         and all others in possession
 
 
 
@@ -18,13 +18,14 @@ d/b/a Aventura Harbor Apartments                          and all others in poss
 PLAINTIFF’S / AUTHORIZED PROPERTY MANAGER FOR PLAINTIFF’S AFFIDAVIT/ NON MILITARY AFFIDAVIT OF NON- PAYMENT
 
 
-BEFORE ME, the undersigned authority, personally appeared, Briana Miranda, Authorized Property Manager for Plaintiff, who after being duly sworn, deposes and says:
+BEFORE ME, the undersigned authority, personally appeared, #{eviction_case.legal_name}, Authorized Property Manager for Plaintiff, who after being duly sworn, deposes and says:
 
-1. That she is the authorized property manager for plaintiff/landlord herein.  That no moneys have been accepted from or on behalf of the defendant(s) herein since the delivery, mailing or posting of the three day notice.
+1. That she is the authorized property manager for plaintiff/landlord herein.  That no moneys have been accepted from or on behalf of the defendant(s) herein since the delivery,
+ mailing or posting of the three day notice.
 
 2. That Plaintiff has personal knowledge that the defendant(s) above named, (is) (are) not in the Military Service of the United States or any of its allies.
 
-      3. That the statements contained in the complaint for removal of tenant are correct and true.
+3. That the statements contained in the complaint for removal of tenant are correct and true.
 
 
 
@@ -38,10 +39,10 @@ The foregoing instrument was acknowledged before me on December 05, 2016 in Dade
 
 
 NX________________________________                  	__________________________________________
-Notary                                                               	Briana Miranda- Authorized Property Manager
-Name: Gimena R Bustillo                                                                  8730 NW 36th Avenue Miami, FL  33147
-Commission No.:FF224875                                                                        (305) 558-0060 Fax (305) 557-9957
-My Commission Expires:4/28/2019
+Notary                                                               	#{eviction_case.prop_asst}- Authorized Property Manager
+                                                                  #{eviction_case.address}#{eviction_case.city_state_zip}
+                                                                        _________
+
 
 
 
@@ -52,14 +53,14 @@ My Commission Expires:4/28/2019
 
 IN THE CIRCUIT COURT OF THE ELEVENTH JUDICIAL CIRCUIT IN AND FOR MIAMI DADE COUNTY FLORIDA IN THE COUNTY COURT IN AND FOR DADE COUNTY, FLORIDA
 
-CASE NO. COSO-16-011313
+CASE NO. #{eviction_case.case_number}
                                                                                     	CIVIL DIVISION
 
 								CLOCK IN
 
 PLAINTIFF(S)                                         VS.                        DEFENDANT(S)
-Beverly Hills Club Apartments, LLC			Rose Carmel Vassor
-d/b/a Aventura Harbor Apartments	                                   and all others in possession
+#{eviction_case.legal_name}			#{eviction_case.name}
+d/b/a #{eviction_case.dba}                                   and all others in possession
 
 
 
@@ -75,9 +76,9 @@ I do hereby certify that no copy of answer or other pleading of the Defendant(s)
 
 
 
-Briana Miranda-Authorized Property Manager for Plaintiff___________ Date December 05, 2016
-8730 NW 36th Avenue Miami, FL  33147
-(305) 558-0060 Fax (305) 557-9957
+#{eviction_case.prop_asst}-Authorized Property Manager for Plaintiff___________ Date #{Time.now)}
+_______________________-
+_________________________
 
 
 DEFAULT
@@ -101,13 +102,13 @@ CLERK OF COURTS                       BY:  __________________________           
 
 IN THE COUNTY COURT IN AND FOR MIAMI DADE COUNTY, FLORIDA
 
-						CASE NO.COSO-16-011313
+						CASE NO.#{eviction_case.case_number}
 						JUDGE:
-Beverly Hills Club Apartments, LLC
-d/b/a Aventura Harbor Apartments
+#{eviction_case.legal_name}
+d/b/a #{eviction_case.dba}
 
 vs.
-Rose Carmel Vassor
+#{eviction_case.name}
 
 and all others in possession
 
@@ -118,30 +119,31 @@ STATE OF FLORIDA  )
 				ss:
 COUNTY OF MIAMI DADE     )
 
-BEFORE ME, the undersigned authority, personally appeared Briana Miranda who upon oath, deposes and says as follows:
+BEFORE ME, the undersigned authority, personally appeared #{eviction_case.prop_asst} who upon oath, deposes and says as follows:
 
 1.	Affiant is agent for Plaintiff in the instant case.
 
-2.	Costs to date in this action are as follows:  Filing fees were One Hundred Eighty Five Dollars ($185.00), issuance of Court Summons was Ten Dollars ($10), service of process fees were Twenty Five Dollars ($25.00, Sheriff fees (filed with Default Package) are One Hundred Fifteen Dollars ($115.00), for a total costs of $335.00.
+2.	Costs to date in this action are as follows:  Filing fees were One Hundred Eighty Five Dollars ($185.00), issuance of Court
+Summons was Ten Dollars ($10), service of process fees were Twenty Five Dollars ($25.00, Sheriff fees (filed with Default Package) are One Hundred Fifteen
+Dollars ($115.00), for a total costs of $335.00.
 
 
 
 FURTHER AFFIANT SAYETH NAUGHT.
 
 ____________________________________
-					Briana Miranda- Authorized Property Manager
-					8730 NW 36 Ave Miami, FL 33147
-					(305) 558-0060 Fax (305) 557-9957
+			#{eviction_case.prop_asst}- Authorized Property Manager
+					#{eviction_case.address}#{eviction_case.city_state_zip}
+					______________________________
 
 SUBSCRIBED AND SWORN TO before me, a Notary Public, this  December 05, 2016 by Briana Miranda  who is personally known to me and who did take an oath.
 
        WITNESS my hand and official seal.
 
 NX______________________________
-Notary Public, State of Florida
- Name: Gimena R Bustillo
-Commission No.: FF224875
-My Commission Expires:  4/28/2019
+
+
+
 
 
 
@@ -152,7 +154,7 @@ IN THE CIRCUIT COURT OF THE ELEVENTH JUDICIAL CIRCUIT
 IN AND FOR DADE COUNTY FLORIDA IN THE COUNTY COURT
 IN AND FOR DADE COUNTY, FLORIDA
 
-CIVIL DIVISION	CASE NO. COSO-16-011313
+CIVIL DIVISION	CASE NO. #{eviction_case.case_number}
 
 PLAINTIFF’S FINAL JUDGMENT
 FOR REMOVAL OF TENANT
@@ -160,8 +162,8 @@ FOR REMOVAL OF TENANT
 CLOCK IN
 
 PLAINTIFF (S)		VS. 		DEFENDANT (S)
-Beverly Hills Club Apartments, LLC			Rose Carmel Vassor
-d/b/a Aventura Harbor Apartments                         and all others in possession
+#{eviction_case.legal_name}			Rose Carmel Vassor
+d/b/a #{eviction_case.dba}                        and all others in possession
 
 
 
@@ -169,12 +171,12 @@ This cause came on before the court on Plaintiff’s complaint for removal of te
 
 IT IS ADJUDGED:
 
-1.	That a final judgment be entered in favor of the Plaintiff(s) Beverly Hills Club Apartments, LLC d/b/a/ Aventura Harbor Apartments and against the  Defendant(s) Rose Carmel Vassor  for possession of the premises located at and known as
-		19221 NE 10th Ave Apt # 0509   North Miami Beach, FL 33179
+1.	That a final judgment be entered in favor of the Plaintiff(s) #{eviction_case.legal_name} d/b/a/ #{eviction_case.dba} and against the  Defendant(s) Rose Carmel Vassor  for possession of the premises located at and known as
+		#{eviction_case.address}#{eviction_case.apt_no}   #{eviction_case.city_state_zip}
 
  Miami Dade County, Florida for which let Writ of Possession issue.
 
-2.	That Plaintiff, Beverly Hills Club Apartments, LLC Aventura Harbor Apartments recover from said Defendant(s)
+2.	That Plaintiff, #{eviction_case.legal_name}, #{eviction_case.dba} recover from said Defendant(s)
 
 costs herein taxed in the sum of  $335.00 for which let execution issue.
 
@@ -184,12 +186,12 @@ ORDERED in Miami Dade County, Florida, this    _____ day of 20___  .
    JUDGE
 CC:
 Plaintiff at:
-8730 NW 36th Avenue
-Miami, FL  33147
+____________
+__________
 and
 Defendant(s) at:
-19221 NE 10th Ave Apt #0509
-North Miami Beach, FL 33179
+#{eviction_case.address}#{eviction_case.apt_no}
+#{eviction_case.city_state_zip}
 
 
 
@@ -205,8 +207,8 @@ WRIT OF POSSESSION
 								CLOCK IN
 
 PLAINTIFF(S)                                         VS.                        DEFENDANT(S)
-Beverly Hills Club Apartments, LLC					Rose Carmel Vassor
-d/b/a Aventura Harbor Apartments
+#{eviction_case.legal_name}				#{eviction_case.name}
+d/b/a #{eviction_case.dba}
                                                                                       and all others in possession
 
 
@@ -215,8 +217,8 @@ TO THE SHERIFF’S OF THE STATE:
 
 YOU ARE COMMANDED to remove all person(s) from the following described property in Dade County, Florida:
 
-				19221 NE 10th Ave Apt # 0509
-				North Miami Beach, FL 33179
+				#{eviction_case.address}#{eviction_case.apt_no}
+				#{eviction_case.city_state_zip}
 
 and to put the Plaintiff(s) in possession of it, after twenty-four (24) hours notice conspicuously posted on the premises
 
@@ -230,10 +232,10 @@ DEPUTY CLERK
 
 
 Prepared by:
-Briana Miranda
-8730 NW 36th AVE
-Miami, Fl. 33147
-305-558-0060
+#{eviction_case.prop_asst}
+__________
+_________
+_________
 
 "
   end

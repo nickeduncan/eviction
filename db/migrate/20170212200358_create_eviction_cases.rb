@@ -1,6 +1,7 @@
 class CreateEvictionCases < ActiveRecord::Migration[5.0]
   def change
     create_table :eviction_cases do |t|
+      t.string :lol
       t.string :property_id
       t.string :unit
       t.string :tenant_id

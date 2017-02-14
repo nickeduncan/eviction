@@ -12,6 +12,7 @@ csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
 
 csv.each do |row|
   t = EvictionCase.new
+  t.lol = row['lol']
   t.property_id = row['property_id']
   t.unit = row['unit']
   t.tenant_id = row['tenant_id']
@@ -34,7 +35,14 @@ csv.each do |row|
   t.motion_to_strike = row['motion_to_strike']
   t.stipulations = row['stipulations']
   t.twenty_four_hour_notice = row['twenty_four_hour_notice']
-
+  t.three_day = row['three_day']
+  t.rent = row['rent']
+  t.three_day_sign = row['three_day_sign']
+  t.prop_asst = row['prop_asst']
+  t.legal_name = row['legal_name']
+  t.dba = row['dba']
+  t.address = row['address']
+  t.city_state_zip = row['city_state_zip']
+  t.apt_no = row['apt_no']
   t.save
-
 end
