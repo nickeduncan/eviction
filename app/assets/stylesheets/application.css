@@ -21,3 +21,9 @@ body {
 .form-control {
   max-width: 300px;
 }
+
+a:hover {
+  text-decoration: none;
+  -webkit-tap-highlight-color: none;
+  background-color: inherit;
+}
