@@ -32,8 +32,6 @@ a:visited {
   color: #000;
 }
 
-
-
 .login {
   margin: 80px auto 0;
 width: 30%;
@@ -76,4 +74,8 @@ padding: 0 5px;
 
 #overlay {
   filter: opacity(1);
+}
+
+.greeting a:visited {
+  color: #fff;
 }
