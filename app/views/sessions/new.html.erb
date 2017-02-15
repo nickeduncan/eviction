@@ -2,21 +2,21 @@
 
 
 
-<img id = 'banner' src="http://unitedpropertymgt.com/wp-content/uploads/2016/12/Miami-Bay-Club-Apartments-rendering-1-2.jpg" alt="Smiley face">
+<img id = 'banner' alt="Smiley face">
 <%= form_tag '/login' do %>
-<div "padding:20px">
-<h1>Login</h1>
-<div style=>
-  <div class="field">
-    <%= label_tag :email %>
-    <%= text_field_tag :email, "", class: "form-control" %>
-  </div>
+<div class="login" "padding:20px">
+  <h1>Login</h1>
+  <div style=>
+    <div class="field">
+      <%= label_tag :email %>
+      <%= text_field_tag :email, "", class: "form-control" %>
+    </div>
 
-  <div class="field">
-    <%= label_tag :password %>
-    <%= password_field_tag :password, "", class: "form-control" %>
+    <div class="field">
+      <%= label_tag :password %>
+      <%= password_field_tag :password, "", class: "form-control" %>
+    </div>
+    <%= submit_tag "Login", class: "btn btn-primary" %>
   </div>
-  <%= submit_tag "Login", class: "btn btn-primary" %>
-</div>
 </div>
 <% end %>
