@@ -33,7 +33,7 @@
             </li>
             <!-- <div class="profile"> -->
             <% if current_user %>
-              <li><%= link_to current_user.name, eviction_cases_path %></li>
+              <li><%= link_to current_user.name, "users#show", params[:id] %></li>
               <li><%= link_to "Logout", logout_path %>
               </li>
             <% else %>
