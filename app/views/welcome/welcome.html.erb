@@ -8,8 +8,15 @@
         portfolio's receivables with our interactive dashboards, legal proceedings
         tracker, and legal documents generator. Sign up today!
       </p>
-      <a href="/login" class= "btn btn-primary">Login</a>
-      <a href="/register" class= "btn btn-danger">Register</a>
+      <div class="welcome_buttons">
+        <% if current_user %>
+          <a href="/eviction_cases" class= "btn btn-primary btn-welcome">Dashboard</a>
+          <a href="/logout" class= "btn btn-danger">Logout</a>
+        <% else %>
+          <a href="/login" class= "btn btn-primary btn-welcome">Login</a>
+          <a href="/register" class= "btn btn-danger">Register</a>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

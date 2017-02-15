@@ -4,10 +4,11 @@
 <br>
 <%= link_to 'New Eviction Case', new_eviction_case_path %>
 <br>
+<br>
 <table class="table">
   <thead>
     <tr>
-      <th><%= sort_link "property_id", "Property" %></th>
+      <th class="first_column"><%= sort_link "property_id", "Property" %></th>
       <th><%= sort_link "unit" %></th>
       <th><%= sort_link "tenant_id", "Tenant" %></th>
       <th><%= sort_link "name" %></th>
