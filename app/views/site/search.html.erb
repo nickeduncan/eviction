@@ -1,10 +1,6 @@
-<!-- <h1>Search</h1>
-<%= form_tag site_search_path do %>
-  <%= search_field_tag :term %>
-  <%= submit_tag "Search" %>
-<% end %> -->
-<!-- <%= params[:term] %> -->
 <h2>Search Results</h2>
+
+<br>
 
 <% if @results.empty? %>
   Try your search again.
@@ -15,5 +11,5 @@
 <% end %>
 
 <br>
-
+<br>
 <%= link_to 'Back', :back %>
