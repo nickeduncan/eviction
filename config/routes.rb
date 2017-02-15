@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root 'eviction_cases#index'
+  #root 'eviction_cases#index'
+  root 'welcome#welcome'
   get 'site/search'
   post 'site/search'
 
