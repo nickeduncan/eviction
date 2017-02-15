@@ -9,7 +9,7 @@ ___ OTHER   AND DEFAULT
 
 PLAINTIFF(S)  VS                    DEFENDANT(S)      CLOCK IN
 
-#{eviction_case.legal_name}          #{eviction_case.legal_name}
+#{eviction_case.legal_name}          #{eviction_case.name}
 
 d/b/a #{eviction_case.legal_name}              and all others in possession
 
@@ -25,7 +25,7 @@ BEFORE ME, the undersigned authority, personally appeared, XXLAWYERXX, Attorney 
 4.  That Plaintiff has personal knowledge that the defendant(s) above named, (is) (are) not in the military Services of the United States or any of its allies.
 
 
-The foregoing instrument was acknowledged before me on December 01, 2016 in MIAMI-DADE County, Florida by XXLAWYERXX who is personally known to me.
+The foregoing instrument was acknowledged before me on #{Time.now} in MIAMI-DADE County, Florida by XXLAWYERXX who is personally known to me.
 
 ________________________________                  __________________________________________
 Notary                                              ____________Attorney for Plaintiff
@@ -56,13 +56,13 @@ CC:
 IN THE COUNTY COURT IN AND FOR MIAMI-DADE COUNTY, FLORIDA
 
               CIVIL DIVISION
-              CASE NO. #{eviction_case.legal_name}
+              CASE NO. #{eviction_case.case_number}
 
 #{eviction_case.legal_name}
-d/b/a #{eviction_case.legal_name}
+d/b/a #{eviction_case.dba}
         Plaintiff
 VS
-#{eviction_case.legal_name}
+#{eviction_case.name}
 
 and all others in possession
         Defendant(s)
@@ -71,7 +71,7 @@ _______________________________________/
 PLAINTIFFS MOTION TO STRIKE ANSWER
  AND ENTER DEFAULT JUDGMENT
 
-Plaintiff #{eviction_case.legal_name}d/b/a #{eviction_case.legal_name} moves for court to strike the defendant,
+Plaintiff #{eviction_case.legal_name}d/b/a #{eviction_case.dba} moves for court to strike the defendant,
 #{eviction_case.name}   and all others in possession answer and enter default judgment as a result of the defendants failure,
 pursuant to F.S. 83.60 (2), to place monies into the Court Registry or file with the Clerk of the Court a Motion to
  have the Court determine the amount of rent to be paid into the Court Registry, as required by law.  No monies have
