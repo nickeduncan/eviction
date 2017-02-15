@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20170214124232) do
   enable_extension "plpgsql"
 
   create_table "eviction_cases", force: :cascade do |t|
+    t.string   "lol"
     t.string   "property_id"
     t.string   "unit"
     t.string   "tenant_id"
