@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Eviction</title>
+    <title>Receivables</title>
     <%= csrf_meta_tags %>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -24,15 +24,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button> -->
-          <a class="navbar-brand" href="/">Evictions</a>
+          <a class="navbar-brand" href="/">Receivables Insight</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/">Dashboard</a></li>
+            <li>
+              <%= link_to "Dashboard", eviction_cases_path %>
+            </li>
             <!-- <div class="profile"> -->
             <% if current_user %>
-              <li><a href="/"><%= current_user.name %></a></li>
-              <li><%= link_to "Logout", logout_path %></li>
+              <li>
+
+              <%= link_to current_user.name, eviction_cases_path %></li>
+              <li><%= link_to "Logout", logout_path %>
+              </li>
             <% else %>
               <li><%= link_to 'Login', login_path %></li>
               <li><%= link_to 'Register', register_path %></li>
