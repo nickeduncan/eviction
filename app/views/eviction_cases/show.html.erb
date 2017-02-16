@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<h2>
+  <%= @eviction_case.name %>
+</h2>
+
 <p>
   <strong>Property:</strong>
   <%= @eviction_case.property_id %>
@@ -111,5 +115,5 @@
 </p>
 
 <%= link_to 'Edit', edit_eviction_case_path(@eviction_case) %> |
-<%= link_to 'Dashboard', eviction_cases_path %>
+<%= link_to 'Dashboard', eviction_cases_path %> |
 <%= link_to 'Back', :back %>
